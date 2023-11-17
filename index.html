@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap&subset=thai" rel="stylesheet">
+</head>
+<body>
+    <h1 id="set">Vocabulario en español 3 📔</h1>
+    <h2 id="dis">the diaeresis (ü), the tilde (ñ), and the acute accent (é, á, í, ó, and ú).</h2>
+    <div class="card">
+        <p class="prompt" id="word"></p>
+        <input type="text" id="answer" placeholder="Type your translation here...">
+        <button onclick="checkAnswer()">Submit 🐻</button>
+        <button onclick="showAnswer()">Anwser? 🐻‍❄️</button>
+        <p id="feedback"></p>
+    </div>
+    <div class="sidebar">
+        <!-- Move the button inside the sidebar -->
+        <button id="toggleSidebarButton">Other?</button>
+    
+        <!-- Sidebar content goes here -->
+        <ul>
+            <li><a href="https://main--gorgeous-pixie-3d17a5.netlify.app/">- Vocabulary Set 1</a></li>
+            <li><a href="https://capable-crumble-4fa807.netlify.app/">- Vocabulary Set 2</a></li>
+            <li><a href="">- Vocabulary Set 3</a></li>
+            <li><a href="https://www.wordreference.com/">- Word Reference</a></li>
+            <li><a href="https://translate.google.co.th/?hl=th&tab=TT">- Google Translate</a></li>
+            <li><a href="https://chat.openai.com/">- Chat GPT</a></li>
+        </ul>
+    </div>
+
+    <button id="openModalButton">Note!</button>
+
+    <!-- Add a hidden modal container -->
+    <div id="modalContainer" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModalButton" class="close-button">&times;</span>
+            <p>สามารถพิมพ์ได้ทั้ง พิมพ์เล็ก,พิมพ์ใหญ่ และไม่มีข้อจำกัดในช่องว่างแล้วนะครับ. 👨‍💻</p>
+        </div>
+    </div>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
+
